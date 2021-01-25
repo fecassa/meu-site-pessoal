@@ -27,7 +27,7 @@ body {
     max-width: 1170px;
 }
 
-.btn{
+.btn {
     border-width: 2px;
     border-radius: 50rem;
     border-style: solid;
@@ -36,7 +36,7 @@ body {
     transition: all 0.5s ease;
 }
 
-.line-separator{
+.line-separator {
     width: 80px;
     border-style: solid;
     border-width: 2px;
@@ -49,9 +49,9 @@ body {
     list-style: none;
 }
 
-.list-style-1 > li{
+.list-style-1>li {
     border-bottom: 1px solid #eaeaea;
-    padding: 0.75rem 0 ;
+    padding: 0.75rem 0;
 }
 
 .w-100 {
@@ -89,6 +89,9 @@ body {
 .pl-4 {
     padding-left: 1.5rem;
 }
+.pr-4 {
+    padding-right: 1.5rem;
+}
 
 /*----------------------------------------------------------------------------------
 2. Color
@@ -97,12 +100,14 @@ body {
 .bg-dark {
     background-color: #111418;
 }
+
 .btn-cv {
     color: #FFF;
     border-color: #20c997;
     background-color: #20c997;
 }
-.btn-cv:hover {    
+
+.btn-cv:hover {
     border-color: #1baa80;
     background-color: #1baa80;
 }
@@ -122,8 +127,12 @@ body {
     color: #20c997;
 }
 
-.line-separator{
-    border-color:#20c997 ;
+.i-youtube{
+    color:red;
+}
+
+.line-separator {
+    border-color: #20c997;
 }
 
 .opacity-4 {
@@ -146,10 +155,11 @@ body {
     color: #fff;
 }
 
-::selection{
+::selection {
     color: #fff;
     background-color: #20c997;
 }
+
 /*----------------------------------------------------------------------------------
 . Typography
 /*--------------------------------------------------------------------------------*/
@@ -199,7 +209,7 @@ p {
     font-size: 8.25rem
 }
 
-::selection{
+::selection {
     text-shadow: none;
 }
 
@@ -269,6 +279,7 @@ p {
 #about {
     position: relative;
     overflow: hidden;
+    padding-bottom: 4.5rem;
 }
 
 .about-col-1 {
@@ -278,6 +289,36 @@ p {
 .about-col-2 {
     max-width: 33.333333%;
 }
-.btn-cv{
+
+.btn-cv {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+/*----------------------------------------------------------------------------------
+. Services
+/*--------------------------------------------------------------------------------*/
+#services{
+    background-color: #f8f9fa;
+    padding-bottom: 4.5rem;
+}
+.myservices-list{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.myservices-item{
+    max-width: 50%;
+    padding: 0 30px 0 80px;
+    position: relative;
+}
+.myservices-item h3{
+    font-size: 1.25rem;    
+    margin-bottom: 10px;
+}
+.myservices-icon{    
+    position: absolute;
+    top:0;
+    left: 0;
+    display: inline-block;
 }
